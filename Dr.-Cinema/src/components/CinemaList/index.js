@@ -6,7 +6,7 @@ import CinemaListItem from '../CinemaListItem'
 const CinemaList = ({cinemas}) => {
     return(
 
-    <View>
+    <View style={styles.list}>
         <FlatList
             numColumns={1}
             data={cinemas.sort((a, b) => a.name.localeCompare(b.name))}
