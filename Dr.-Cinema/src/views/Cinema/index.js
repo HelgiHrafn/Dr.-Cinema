@@ -3,17 +3,7 @@ import { View, Text } from 'react-native'
 import { headings } from '../../styles/headings'
 import styles from './styles'
 
-const Cinema = () => {
-    const cinema = {
-        "id": 1,
-        "name": "Smárabíó",
-        "address\t": "Smáralind",
-        "city": "201 Kópavogur",
-        "phone": "564-0000",
-        "website": "www.smarabio.is",
-        "description": "Smárabíó er eitt fullkomnasta kvikmyndahús landsins.<br><br>\n\nBíóið er með 5 sali og tekur rúmlega 1.000 manns í sæti..\n<br><br><b>\n",
-        "google_map": ""
-    }
+const Cinema = ({ cinema }) => {
 
     return (
         <View style={styles.main}>
