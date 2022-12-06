@@ -3,7 +3,7 @@ import { View, FlatList } from 'react-native'
 import styles from './styles'
 import CinemaListItem from '../CinemaListItem'
 
-const CinemaList = ({cinemas}) => {
+const CinemaList = ({cinemas, navigation}) => {
     return(
 
     <View style={styles.list}>
@@ -13,7 +13,8 @@ const CinemaList = ({cinemas}) => {
             renderItem={({item}) => {
                 return (
                     <CinemaListItem
-                        cinema={item} />
+                        cinema={item} 
+                        navigation={navigation}/>
                 )
             }}   
             />

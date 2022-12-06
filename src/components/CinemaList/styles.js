@@ -2,9 +2,10 @@ import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
     list: {
-        marginTop: '20%',
+        margin: 10,
         backgroundColor: '#144552',
-        height: '80%',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderRadius: 10,
+        marginBottom: 30
     }
 })

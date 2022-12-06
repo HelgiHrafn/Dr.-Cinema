@@ -3,8 +3,8 @@ import { View, Text } from 'react-native'
 import { headings } from '../../styles/headings'
 import styles from './styles'
 
-const Cinema = ({ cinema }) => {
-
+const Cinema = ({ navigation, route }) => {
+    const cinema = route.params.cinema
     return (
         <View style={styles.main}>
             <Text style={headings.h1}>{cinema.name}</Text>

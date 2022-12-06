@@ -6,7 +6,7 @@ import * as apiService from '../../services/apiService'
 
 
 
-const Cinemas = () => {
+const Cinemas = ({navigation}) => {
 
     const [cinemas, setCinemas] = useState([])
 
@@ -21,7 +21,7 @@ const Cinemas = () => {
 
     return (
         <View style={styles.main}>
-            <CinemaList cinemas={cinemas}/>
+            <CinemaList cinemas={cinemas} navigation={navigation}/>
         </View>
     )
 }
