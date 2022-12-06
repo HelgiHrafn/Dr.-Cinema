@@ -10,3 +10,40 @@ export const getTheaters = async () => {
     })
     return result.json()
 }
+export const getMovies = async () => {
+    const result = await fetch(ENDPOINT + 'movies', {
+        method: 'GET',
+        headers: {
+        'X-ACCESS-TOKEN': ACCESS_TOKEN
+        }
+    })
+    return result.json()
+}
+export const getUpcoming = async () => {
+    const result = await fetch(ENDPOINT + 'upcoming', {
+        method: 'GET',
+        headers: {
+        'X-ACCESS-TOKEN': ACCESS_TOKEN
+        }
+    })
+    return result.json()
+}
+export const getImages = async () => {
+    const result = await fetch(ENDPOINT + 'images', {
+        method: 'GET',
+        headers: {
+        'X-ACCESS-TOKEN': ACCESS_TOKEN
+        }
+    })
+    return result.json()
+}
+export const getGenres = async () => {
+    const result = await fetch(ENDPOINT + 'genres', {
+        method: 'GET',
+        headers: {
+        'X-ACCESS-TOKEN': ACCESS_TOKEN
+        }
+    })
+    return result.json()
+    }
+
