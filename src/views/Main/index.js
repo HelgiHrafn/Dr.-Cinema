@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { View } from 'react-native'
 import CinemaList from '../../components/CinemaList'
 import styles from './styles'
-import * as apiService from '../../services/CinemaService'
 import { useDispatch, useSelector } from 'react-redux';
 import { getCinemas } from '../../actions/CinemaActions'
 
