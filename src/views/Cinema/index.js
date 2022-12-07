@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import { getMovies } from '../../actions/MovieActions'
 import { headings } from '../../styles/headings'
 import styles from './styles'
@@ -19,15 +19,22 @@ const Cinema = ({ navigation, route }) => {
 
     return (
         <View style={styles.main}>
-            <Text style={headings.h1}>{cinema.name}</Text>
-            <Text style={headings.h3}>{cinema.description}</Text>
-            <View>
+            <View style={styles.about}>
+                <Text style={headings.h1}>{cinema.name}</Text>
+                <ScrollView style={styles.description}>
+                    <Text style={headings.h3}>{cinema.description}</Text>
+                </ScrollView>
+                
+                
+            </View>
+            <View style={styles.info}>
                 <Text style={headings.h3}>{cinema['address\t']}</Text>
                 <Text style={headings.h3}>{cinema.city}</Text>
+                <Text style={headings.h3}>Sími: {cinema.phone}</Text>
+                <Text style={headings.h3}>Heimasíða: {cinema.website}</Text>
             </View>
-            <Text style={headings.h3}>{cinema.phone}</Text>
-            <Text style={headings.h3}>{cinema.website}</Text>
-            <MovieList movies={movies}></MovieList>
+            
+            <MovieList style={styles.movieList} movies={movies} navigation={navigation}></MovieList>
         </View>
     )
 }
