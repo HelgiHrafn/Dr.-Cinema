@@ -8,6 +8,7 @@ const CinemaList = ({cinemas, navigation}) => {
 
     <View style={styles.list}>
         <FlatList
+            showsVerticalScrollIndicator={false}
             numColumns={1}
             data={cinemas.sort((a, b) => a.name.localeCompare(b.name))}
             renderItem={({item}) => {
