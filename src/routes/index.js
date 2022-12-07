@@ -10,8 +10,24 @@ const Stack = createStackNavigator()
 const Routes = () => (
     <NavigationContainer>
         <Stack.Navigator initialRouteName='Contacts'>
-            <Stack.Screen name ="Cinemas" component={Cinemas} />
-            <Stack.Screen name ="Cinema" component={Cinema} />
+        <Stack.Screen 
+            options={{
+                headerStyle: {
+                    backgroundColor: '#212f45'},
+                headerTintColor: '#fff',
+                headerTitleStyle: 
+                {fontWeight: 'bold'}}}
+            name ="Cinemas" 
+            component={Cinemas}/>
+        <Stack.Screen 
+            options={{
+                headerStyle: {
+                    backgroundColor: '#212f45'},
+                headerTintColor: '#fff',
+                headerTitleStyle: 
+                {fontWeight: 'bold'}}}
+            name ="Cinema" 
+            component={Cinema}/>
             {/* <Stack.Screen name ="Movie" component={Movie} /> */}
         </Stack.Navigator>
     </NavigationContainer>
