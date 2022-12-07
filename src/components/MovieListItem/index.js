@@ -9,7 +9,6 @@ const MovieListItem = ({ movie, navigation }) => {
             <Image style={styles.poster} source={{ uri: movie.poster }}/>
             <Text style={[headings.h3, styles.title]}>{movie.title}</Text>
             <Text style={headings.h3}>({movie.year})</Text>
-            <Text style={headings.h3}>({movie.genres.Name})</Text>
         </TouchableOpacity>
     )
 }

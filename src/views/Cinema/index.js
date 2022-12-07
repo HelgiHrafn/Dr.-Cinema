@@ -8,14 +8,12 @@ import MovieList from '../../components/MovieList'
 
 const Cinema = ({ navigation, route }) => {
     const cinema = route.params.cinema
-
     const dispatch = useDispatch();
     useEffect(()=>{
         dispatch(getMovies())
     }, [])
     const movies = useSelector(state => state.movies)
     
-  
 
     return (
         <View style={styles.main}>
