@@ -47,3 +47,6 @@ export const getGenres = async () => {
     return result.json()
     }
 
+const cinemaService = {
+    
+}

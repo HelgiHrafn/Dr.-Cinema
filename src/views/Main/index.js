@@ -2,22 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { View } from 'react-native'
 import CinemaList from '../../components/CinemaList'
 import styles from './styles'
-import * as apiService from '../../services/apiService'
-
-
+import * as apiService from '../../services/CinemaService'
+import { useDispatch, useSelector } from 'react-redux';
+import { getCinemas } from '../../actions/CinemaActions'
 
 const Cinemas = ({navigation}) => {
 
-    const [cinemas, setCinemas] = useState([])
-
+    const dispatch = useDispatch();
     useEffect(()=>{
-        getCinemas()
+        dispatch(getCinemas())
     }, [])
-
-    const getCinemas = async () => {
-        const cinemas = await apiService.getTheaters()
-        setCinemas(cinemas)
-    }
+    const cinemas = useSelector(state => state.cinemas)
+    
+  
 
     return (
         <View style={styles.main}>
