@@ -32,7 +32,7 @@ const Cinema = ({ navigation, route }) => {
                 <Text style={headings.h3}>Heimasíða: {cinema.website}</Text>
             </View>
             
-            <MovieList style={styles.movieList} movies={movies} navigation={navigation}></MovieList>
+            <MovieList cinema={cinema} style={styles.movieList} movies={movies} navigation={navigation}></MovieList>
         </View>
     )
 }
