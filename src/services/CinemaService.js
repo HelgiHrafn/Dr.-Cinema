@@ -1,5 +1,5 @@
 const ENDPOINT = 'https://api.kvikmyndir.is/'
-const ACCESS_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MzhmMzkzMGZmMmQ4ZDEwOWVmYWZmYjciLCJnbG9iYWxhZG1pbiI6ZmFsc2UsImFkbWluIjpmYWxzZSwiYWN0aXZlIjp0cnVlLCJmdWxsbmFtZSI6Ikd1w7BtdW5kdXIgS3Jpc3Rqw6FuIEdVw7BuYXNvbiIsImVtYWlsIjoiZ3VtbWlndWRuYUBnbWFpbC5jb20iLCJ1c2VybmFtZSI6Imd1bW1pZ3VkbmEiLCJwYXNzd29yZCI6IiQyYSQwOCRIYW1BTkhBMVV0MmFCSUxBSFBSeC91ZzIyT3RrcHljdHNxQVoyeXphYkRDVG5HOEpoSXAuMiIsImRvbWFpbiI6IkjDoXNrw7NsaW5uIMOtIFJleWtqYXbDrWsiLCJtZXNzYWdlIjoiU2Nob29sIHB1cnBvc2VzIiwiaWF0IjoxNjcwNDE5MTAzLCJleHAiOjE2NzA1MDU1MDN9.5gRBmupVj2VThbvvZ5X_97F7tXrnwG2Q4bXjCt5tmdU'
+const ACCESS_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MzhlMDIyM2ZmMmQ4ZDEwOWVmYWZmOTkiLCJnbG9iYWxhZG1pbiI6ZmFsc2UsImFkbWluIjpmYWxzZSwiYWN0aXZlIjp0cnVlLCJmdWxsbmFtZSI6IkhlbGdpIEhyYWZuIEF4ZWxzc29uIiwiZW1haWwiOiJoZWxnaWEyMUBydS5pcyIsInVzZXJuYW1lIjoiZHJjaW5lbWEtaGdrIiwicGFzc3dvcmQiOiIkMmEkMDgkSk41UkhnZHZ3RndDYWc0bFpZQXl1LmkwSlNtb2NKUEdXeDk5VjNPUDNKeFg4bkMuRWVJLmEiLCJkb21haW4iOiJsb2NhbGhvc3QiLCJtZXNzYWdlIjoiZm9yIGEgc2Nob29sIHByb2plY3QgbWFraW5nIGEgbW92aWUgYXBwIiwiaWF0IjoxNjcwNDIyMDg3LCJleHAiOjE2NzA1MDg0ODd9.jJ3730BN65NS7Ql4elT0QCi_tFfY4eXiETvnKQASMv4'
 
 export const getTheaters = async () => {
     const result = await fetch(ENDPOINT + 'theaters', {
@@ -46,7 +46,3 @@ export const getGenres = async () => {
     })
     return result.json()
     }
-
-const cinemaService = {
-    
-}

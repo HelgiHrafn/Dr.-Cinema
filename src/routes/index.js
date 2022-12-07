@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Cinemas from '../views/Main'
 import Cinema from '../views/Cinema'
 import Upcoming from '../views/Upcoming'
+import { dark, darker } from '../styles/colors'
 //import Movie from '../views/Movie'
 
 const Stack = createStackNavigator()
@@ -14,7 +15,7 @@ const Routes = () => (
         <Stack.Screen 
             options={{
                 headerStyle: {
-                    backgroundColor: '#212f45'},
+                    backgroundColor: dark},
                 headerTintColor: '#fff',
                 headerTitleStyle: 
                 {fontWeight: 'bold'}}}
@@ -23,7 +24,7 @@ const Routes = () => (
         <Stack.Screen 
             options={{
                 headerStyle: {
-                    backgroundColor: '#212f45'},
+                    backgroundColor: dark},
                 headerTintColor: '#fff',
                 headerTitleStyle: 
                 {fontWeight: 'bold'}}}
