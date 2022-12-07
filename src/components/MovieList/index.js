@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, FlatList } from 'react-native'
+import { View, FlatList, Text } from 'react-native'
 import styles from './styles'
 import MovieListItem from '../MovieListItem'
 import { headings } from '../../styles/headings'
