@@ -1,16 +1,15 @@
-import React from 'react'
-import Cinemas from './src/views/Main'
-import AppContainer from './src/routes'
-// import { configureStore } from '@reduxjs/toolkit'
-// import reducers from './src/reducers';
-// import { Provider } from 'react-redux';
-import Cinema from './src/views/Cinema'
+import React from 'react';
+import { createStore, applyMiddleware } from 'redux';
+import AppContainer from './src/routes';
+import reducers from './src/reducers';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
+
+
 export default function App () {
     return (
-        // <Provider store={configureStore({reducers})}>
-             <AppContainer/>
-        // </Provider>
-        // <Cinemas></Cinemas>
-        //<Cinema></Cinema>
+        <Provider store={createStore(reducers, applyMiddleware(thunk))}>
+            <AppContainer/>
+        </Provider>
     )
 }
