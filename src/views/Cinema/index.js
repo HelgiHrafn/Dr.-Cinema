@@ -8,14 +8,12 @@ import MovieList from '../../components/MovieList'
 
 const Cinema = ({ navigation, route }) => {
     const cinema = route.params.cinema
-
     const dispatch = useDispatch();
     useEffect(()=>{
         dispatch(getMovies())
     }, [])
     const movies = useSelector(state => state.movies)
     
-  
 
     return (
         <View style={styles.main}>
@@ -27,7 +25,7 @@ const Cinema = ({ navigation, route }) => {
             </View>
             <Text style={headings.h3}>{cinema.phone}</Text>
             <Text style={headings.h3}>{cinema.website}</Text>
-            <MovieList movies={movies}></MovieList>
+            <MovieList movies={movies} cinema={cinema}></MovieList>
         </View>
     )
 }
