@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, TouchableOpacity } from 'react-native'
+import { Text, Image, TouchableOpacity } from 'react-native'
 import { headings } from '../../styles/headings'
 import styles from './styles'
 
@@ -9,9 +9,10 @@ const UpcomingListItem = ({ upcomingMovie, navigation }) => {
                 style={styles.item} 
                 // onPress={()=> navigation.navigate('UpcomingMovie', {upcomingMovie})}
             >
-            <Text style={headings.h1}>{upcomingMovie.title}</Text>
-            <Text style={headings.h3}>{upcomingMovie.year}</Text>
-        </TouchableOpacity>
+        <Image style={styles.poster} source={{ uri: upcomingMovie.poster }}/>
+        <Text style={[headings.h3, styles.title]}>{upcomingMovie.title}</Text>
+        <Text style={headings.h3}>({upcomingMovie.year})</Text>
+    </TouchableOpacity>
     )
 }
 export default UpcomingListItem

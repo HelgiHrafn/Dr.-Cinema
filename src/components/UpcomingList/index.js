@@ -8,8 +8,8 @@ const UpcomingList = ({upcoming, navigation}) => {
 
     <View style={styles.list}>
         <FlatList
-            numColumns={1}
-            data={upcoming.sort((a, b) => a.title.localeCompare(b.title))}
+            numColumns={2}
+            data={upcoming.sort((a, b) => a.year.localeCompare(b.year))}
             renderItem={({item}) => {
                 return (
                     <UpcomingListItem

@@ -36,7 +36,8 @@ const Routes = () => (
         <Stack.Screen 
             options={{
                 headerStyle: {
-                    backgroundColor: '#212f45'},
+                    shadowColor: 'transparent',
+                    backgroundColor: dark},
                 headerTintColor: '#fff',
                 headerTitleStyle: 
                 {fontWeight: 'bold'}}}

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { View, Button, TouchableOpacity } from 'react-native'
 import CinemaList from '../../components/CinemaList'
-import UpcomingList from '../../components/UpcomingList'
 import styles from './styles'
 import { useDispatch, useSelector } from 'react-redux';
 import { getCinemas, getUpcoming } from '../../actions/CinemaActions'

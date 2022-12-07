@@ -1,11 +1,14 @@
 import { StyleSheet } from 'react-native'
+import { dark } from '../../styles/colors'
 
 export default StyleSheet.create({
     list: {
-        margin: 10,
-        backgroundColor: '#144552',
+      
+        backgroundColor: dark,
         alignItems: 'center',
         borderRadius: 10,
-        marginBottom: 30
+        flex: 1,
+        marginBottom: 30,
+        padding: 5
     }
 })
