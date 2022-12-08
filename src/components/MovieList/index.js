@@ -8,7 +8,7 @@ const MovieList = ({movies, navigation, cinema}) => {
     const filteredMovies = []
     movies.forEach(movie => {
         for ( let i = 0; i < movie?.showtimes.length; i++) {       
-            if (movie?.showtimes[i].cinema.id == cinema.id)
+            if (movie?.showtimes[i].cinema.id == cinema.id|movie?.showtimes[i].cinema==cinema.id)
                 filteredMovies.push(movie)    
            } 
       });
