@@ -11,15 +11,8 @@ const MovieList = ({movies, navigation, cinema}) => {
             if (movie?.showtimes[i].cinema.id == cinema.id)
                 filteredMovies.push(movie)    
            } 
-<<<<<<< HEAD
-      })
-
-    
-    
-=======
       });
 
->>>>>>> 88810bfecad64d7464954446ab5fbfffcd94514a
    return(
     <View style={styles.list}>
         <Text style={headings.h1}>Í sýningu:</Text>
