@@ -35,8 +35,8 @@ const SmallGenreList = ({genres}) => {
                     <GenreItem genre={item}></GenreItem>
                 )
             }}
-            listKey={(item, index) => `_key${index.toString()}`}
-            keyExtractor={(item, index) => `_key${index.toString()}`}
+            listKey={(index) => `_key${index.toString()}`}
+            keyExtractor={(index) => `_key${index.toString()}`}
             />
     </View>)
 }
