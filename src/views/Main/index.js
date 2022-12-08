@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import { View, Button, TouchableOpacity } from 'react-native'
-import CinemaList from '../../components/CinemaList'
-import styles from './styles'
+import React, { useEffect } from 'react';
+import { View, Button, TouchableOpacity } from 'react-native';
+import CinemaList from '../../components/CinemaList';
+import styles from './styles';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCinemas, getUpcoming } from '../../actions/CinemaActions'
-import Upcoming from '../Upcoming'
+import { getCinemas } from '../../actions/CinemaActions';
 
 const Cinemas = ({navigation}) => {
 
@@ -26,4 +25,5 @@ const Cinemas = ({navigation}) => {
         </View>
     )
 }
-export default Cinemas
+
+export default Cinemas;

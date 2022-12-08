@@ -5,4 +5,4 @@ export default function (state = [], action) {
         case constants.GET_CINEMAS: return action.payload;
         default: return state;
     }
-}
+};

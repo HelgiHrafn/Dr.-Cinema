@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import { darker, light } from '../../styles/colors'
+import { StyleSheet } from 'react-native';
+import { darker } from '../../styles/colors';
 
 export default StyleSheet.create({
     item: {
@@ -20,4 +20,4 @@ export default StyleSheet.create({
     },
     title: {
     }
-})
+});
