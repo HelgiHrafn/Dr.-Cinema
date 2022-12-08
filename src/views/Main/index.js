@@ -4,6 +4,7 @@ import CinemaList from '../../components/CinemaList';
 import styles from './styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCinemas } from '../../actions/CinemaActions';
+import { filterCinemas } from '../../services/CinemaService';
 
 const Cinemas = ({navigation}) => {
 
@@ -11,7 +12,8 @@ const Cinemas = ({navigation}) => {
     useEffect(()=>{
         dispatch(getCinemas())
     }, [])
-    const cinemas = useSelector(state => state.cinemas)
+    var cinemas = useSelector(state => state.cinemas)
+    cinemas = filterCinemas(cinemas)
 
     return (
         <View style={styles.main}>
