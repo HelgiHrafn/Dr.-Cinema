@@ -4,7 +4,6 @@ import * as constants from '../constants';
 export const getMovies = () => {
     return async dispatch => {
         try {
-            console.log("getting")
             const movies = await cinemaService.getMovies();
             dispatch(getCurrentMovies(movies));
         } catch (err) {

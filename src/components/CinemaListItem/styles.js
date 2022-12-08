@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import { dark, darker, light, lighter } from '../../styles/colors'
+import { StyleSheet } from 'react-native';
+import { darker } from '../../styles/colors';
 
 export default StyleSheet.create({
     item: {
@@ -12,4 +12,4 @@ export default StyleSheet.create({
         borderRadius: 10, 
 
     }
-})
+});

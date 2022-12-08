@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import { darker } from '../../styles/colors'
+import { StyleSheet } from 'react-native';
+import { darker } from '../../styles/colors';
 
 export default StyleSheet.create({
     main: {
@@ -7,4 +7,4 @@ export default StyleSheet.create({
         height: '100%',
         backgroundColor: darker
     }
-})
+});

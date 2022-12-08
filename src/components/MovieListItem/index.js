@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { headings } from '../../styles/headings'
 import styles from './styles'
 import SmallGenreList from '../SmallGenreList'
+=======
+import React from 'react';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { headings } from '../../styles/headings';
+import styles from './styles';
+>>>>>>> 88810bfecad64d7464954446ab5fbfffcd94514a
 
 const MovieListItem = ({ movie, navigation }) => {
     const genres = movie?.genres
@@ -15,4 +22,5 @@ const MovieListItem = ({ movie, navigation }) => {
         </TouchableOpacity>
     )
 }
-export default MovieListItem
+
+export default MovieListItem;

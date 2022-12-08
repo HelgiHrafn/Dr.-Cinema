@@ -22,4 +22,4 @@ export const headings = {
         ...base.headings,
         fontSize: 11
     }
-}
+};

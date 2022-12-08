@@ -1,11 +1,11 @@
-import React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
-import Cinemas from '../views/Main'
-import Cinema from '../views/Cinema'
-import Upcoming from '../views/Upcoming'
-import { dark, darker } from '../styles/colors'
-import Movie from '../views/Movie'
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Cinemas from '../views/Main';
+import Cinema from '../views/Cinema';
+import Upcoming from '../views/Upcoming';
+import { dark } from '../styles/colors';
+import Movie from '../views/Movie';
 
 const Stack = createStackNavigator()
 
@@ -32,10 +32,9 @@ const Routes = () => (
         <Stack.Screen 
             options={style}
             name ="Upcoming" 
-            component={Upcoming}/>
-          
+            component={Upcoming}/> 
         </Stack.Navigator>
     </NavigationContainer>
 )
 
-export default Routes
+export default Routes;

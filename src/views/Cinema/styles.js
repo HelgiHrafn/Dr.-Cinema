@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native'
-import { dark, darker } from '../../styles/colors'
+import { StyleSheet } from 'react-native';
+import { dark, darker } from '../../styles/colors';
 
 export default StyleSheet.create({
     main: {
@@ -28,4 +28,4 @@ export default StyleSheet.create({
         maxHeight: 125
     }
     
-})
+});
