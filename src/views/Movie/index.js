@@ -6,7 +6,7 @@ import styles from './styles'
 
 
 
-const Movie = ({ route}) => {
+const Movie = ({ route }) => {
     const movie = route.params.movie
    
 return (
