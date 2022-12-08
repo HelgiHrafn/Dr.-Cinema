@@ -1,7 +1,7 @@
-import React from 'react'
-import { Text, Image, TouchableOpacity } from 'react-native'
-import { headings } from '../../styles/headings'
-import styles from './styles'
+import React from 'react';
+import { Text, Image, TouchableOpacity } from 'react-native';
+import { headings } from '../../styles/headings';
+import styles from './styles';
 
 const UpcomingListItem = ({ upcomingMovie, navigation }) => {
     console.log('before ', upcomingMovie.poster)
@@ -10,14 +10,12 @@ const UpcomingListItem = ({ upcomingMovie, navigation }) => {
         console.log('after ', upcomingMovie.poster)
     }
     return(
-        <TouchableOpacity 
-                style={styles.item} 
-                // onPress={()=> navigation.navigate('UpcomingMovie', {upcomingMovie})}
-            >
+        <TouchableOpacity style={styles.item}>
         <Image style={styles.poster} source={{ uri: upcomingMovie.poster }}/>
         <Text style={[headings.h3, styles.title]}>{upcomingMovie.title}</Text>
         <Text style={headings.h3}>({upcomingMovie.year})</Text>
     </TouchableOpacity>
     )
 }
-export default UpcomingListItem
+
+export default UpcomingListItem;

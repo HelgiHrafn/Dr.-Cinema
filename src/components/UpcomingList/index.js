@@ -1,11 +1,10 @@
-import React from 'react'
-import { View, FlatList } from 'react-native'
-import styles from './styles'
-import UpcomingListItem from '../UpcomingListItem'
+import React from 'react';
+import { View, FlatList } from 'react-native';
+import styles from './styles';
+import UpcomingListItem from '../UpcomingListItem';
 
 const UpcomingList = ({upcoming, navigation}) => {
     return(
-
     <View style={styles.list}>
         <FlatList
             numColumns={2}
@@ -20,4 +19,5 @@ const UpcomingList = ({upcoming, navigation}) => {
             />
     </View>)
 }
-export default UpcomingList
+
+export default UpcomingList;

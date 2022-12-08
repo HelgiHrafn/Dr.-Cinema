@@ -1,7 +1,7 @@
-import React from 'react'
-import { View, Text, Image, TouchableOpacity } from 'react-native'
-import { headings } from '../../styles/headings'
-import styles from './styles'
+import React from 'react';
+import { Text, TouchableOpacity } from 'react-native';
+import { headings } from '../../styles/headings';
+import styles from './styles';
 
 const CinemaListItem = ({ cinema, navigation }) => {
     return(
@@ -11,4 +11,5 @@ const CinemaListItem = ({ cinema, navigation }) => {
         </TouchableOpacity>
     )
 }
-export default CinemaListItem
+
+export default CinemaListItem;

@@ -1,7 +1,7 @@
-import React from 'react'
-import { View, FlatList } from 'react-native'
-import styles from './styles'
-import CinemaListItem from '../CinemaListItem'
+import React from 'react';
+import { View, FlatList } from 'react-native';
+import styles from './styles';
+import CinemaListItem from '../CinemaListItem';
 
 const CinemaList = ({cinemas, navigation}) => {
     return(
@@ -21,4 +21,5 @@ const CinemaList = ({cinemas, navigation}) => {
             />
     </View>)
 }
-export default CinemaList
+
+export default CinemaList;
