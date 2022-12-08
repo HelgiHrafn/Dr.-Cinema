@@ -19,11 +19,11 @@ const Cinema = ({ navigation, route }) => {
                 <View style={styles.about}>
                 <Text style={headings.h1}>{cinema.name}</Text>
                 {
-                    cinema.description==null
+                    cinema.description==null|cinema.description==''
                     ? <View></View>
                     :<ScrollView style={styles.description}>
-                    <Text style={headings.h3}>{cinema.description}</Text>
-                </ScrollView>  
+                        <Text style={headings.h3}>{cinema.description}</Text>
+                    </ScrollView>  
                 }
                 
             </View>

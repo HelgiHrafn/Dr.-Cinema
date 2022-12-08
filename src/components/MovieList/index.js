@@ -14,21 +14,29 @@ const MovieList = ({movies, navigation, cinema}) => {
       });
 
    return(
-    <View style={styles.list}>
-        <Text style={headings.h1}>Í sýningu:</Text>
-        <FlatList
-            showsVerticalScrollIndicator={false}
-            numColumns={2}
-            data={filteredMovies}
-            renderItem={({item}) => {
-                return ( 
-                    <MovieListItem
-                        movie={item} 
-                        navigation={navigation}/>
-                )
-            }}   
-            listKey="MovieList"
-            />
+    <View style={styles.main}>
+        {
+            filteredMovies[0] == null
+            ?
+            <Text style={headings.h1}>Engar myndir í sýningu :(</Text>
+            :
+            <View style={styles.list}>
+                <Text style={headings.h1}>Í sýningu:</Text>
+                <FlatList
+                    showsVerticalScrollIndicator={false}
+                    numColumns={2}
+                    data={filteredMovies}
+                    renderItem={({item}) => {
+                        return ( 
+                            <MovieListItem
+                                movie={item} 
+                                navigation={navigation}/>
+                        )
+                    }}   
+                    listKey="MovieList"
+                    />
+            </View>
+        }
     </View>
     )
 }
