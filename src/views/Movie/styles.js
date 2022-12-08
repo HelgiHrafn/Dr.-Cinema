@@ -17,8 +17,8 @@ export default StyleSheet.create({
         marginBottom: 30
     },
     poster: {
-        width: 400,
-        height: 400,
+        width: 250,
+        height: 250,
         resizeMode: 'contain'
     },
     description: {

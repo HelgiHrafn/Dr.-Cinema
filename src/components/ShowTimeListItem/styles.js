@@ -2,9 +2,11 @@ import { StyleSheet } from 'react-native'
 import { darker, light } from '../../styles/colors'
 
 export default StyleSheet.create({
-    list: {
-        maxHeight: 60,
+    item: {
+        padding: 5,
+        backgroundColor: darker,
+        borderRadius: 10,
         margin: 5,
-        maxWidth: '100%'
+        flex: 1
     }
 })

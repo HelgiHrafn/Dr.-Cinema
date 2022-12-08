@@ -7,8 +7,15 @@ export default StyleSheet.create({
         backgroundColor: dark,
         alignItems: 'center',
         borderRadius: 10,
-        flex: 1,
         marginBottom: 30,
-        padding: 5
+        marginTop: 10,
+        padding: 5,
+        flex: 1,
+        minWidth: 400
+        
+    },
+    flatlist: {
+        backgroundColor: 'red',
+        flex: 1
     }
 });

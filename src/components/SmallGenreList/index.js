@@ -26,7 +26,8 @@ const SmallGenreList = ({genres}) => {
    return(
     <View style={styles.list}>
         <FlatList
-            
+            style={styles.flatlist}
+            scrollEnabled={false}
             showsVerticalScrollIndicator={false}
             numColumns={2}
             data={genres}
@@ -35,8 +36,7 @@ const SmallGenreList = ({genres}) => {
                     <GenreItem genre={item}></GenreItem>
                 )
             }}
-            listKey={(index) => `_key${index.toString()}`}
-            keyExtractor={(index) => `_key${index.toString()}`}
+            listKey={genres[0]}
             />
     </View>)
 }

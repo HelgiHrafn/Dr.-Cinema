@@ -10,15 +10,13 @@ const ShowTimeList = ({showtimes}) => {
         <FlatList
             
             showsVerticalScrollIndicator={false}
-            numColumns={2}
+            numColumns={4}
             data={showtimes}
             renderItem={({item}) => {
                 return ( 
                     <ShowTimeListItem showtime={item}></ShowTimeListItem>
                 )
             }}
-            listKey={(item, index) => `_key${index.toString()}`}
-            keyExtractor={(item, index) => `_key${index.toString()}`}
             />
     </View>)
 }

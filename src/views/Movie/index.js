@@ -32,15 +32,8 @@ const Movie = ({ route }) => {
                 <SmallGenreList genres={movie.genres}></SmallGenreList>
                 <ScrollView style={styles.description}>
                     <Text style={headings.h3}>{movie.plot}</Text>
-                    
-                    <ShowTimeList showtimes={filteredShowTimesFixed}/>
-                    <TouchableOpacity style={styles.buttonBackground}>
-                    <Button
-                    title="Buy ticket"
-                    onPress={() => navigation.navigate("Upcoming")}
-                    style={styles.button}/>
-                    </TouchableOpacity>
                 </ScrollView>
+                <ShowTimeList showtimes={filteredShowTimesFixed}/>
             </View>
     </View>
     )
