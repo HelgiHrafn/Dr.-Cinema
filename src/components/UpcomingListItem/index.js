@@ -4,11 +4,10 @@ import { headings } from '../../styles/headings'
 import styles from './styles'
 
 const UpcomingListItem = ({ upcomingMovie, navigation }) => {
-    console.log('before ', upcomingMovie.poster)
     if (upcomingMovie.poster == "https://kvikmyndir.is/images/poster/"){
         upcomingMovie.poster = `https://i.ibb.co/VWhtmZP/no-img-available.jpg`
-        console.log('after ', upcomingMovie.poster)
     }
+    console.log(upcomingMovie)
     return(
         <TouchableOpacity 
                 style={styles.item} 
@@ -16,7 +15,7 @@ const UpcomingListItem = ({ upcomingMovie, navigation }) => {
             >
         <Image style={styles.poster} source={{ uri: upcomingMovie.poster }}/>
         <Text style={[headings.h3, styles.title]}>{upcomingMovie.title}</Text>
-        <Text style={headings.h3}>({upcomingMovie.year})</Text>
+        <Text style={headings.h3}>({upcomingMovie["release-dateIS"]})</Text>
     </TouchableOpacity>
     )
 }
