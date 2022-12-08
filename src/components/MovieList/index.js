@@ -29,6 +29,7 @@ const MovieList = ({movies, navigation, cinema}) => {
                     renderItem={({item}) => {
                         return ( 
                             <MovieListItem
+                                cinema={cinema}    
                                 movie={item} 
                                 navigation={navigation}/>
                         )
@@ -39,6 +40,7 @@ const MovieList = ({movies, navigation, cinema}) => {
         }
     </View>
     )
+
 }
 
 export default MovieList;
