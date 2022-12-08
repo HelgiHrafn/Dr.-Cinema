@@ -1,20 +1,20 @@
-import React from 'react'
-import { View, FlatList } from 'react-native'
-import styles from './styles'
-import GenreItem from '../GenreItem'
+import React from 'react';
+import { View, FlatList, Text } from 'react-native';
+import styles from './styles';
+import ShowTimeListItem from '../ShowTimeListItem';
 
-const SmallGenreList = ({genres}) => {
-    console.log("what do genres look like", genres)
+const ShowTimeList = ({showtimes}) => {
+    console.log("what does showtime look like", showtimes)
    return(
     <View style={styles.list}>
         <FlatList
             
             showsVerticalScrollIndicator={false}
             numColumns={2}
-            data={genres}
+            data={showtimes}
             renderItem={({item}) => {
                 return ( 
-                    <GenreItem genre={item}></GenreItem>
+                    <ShowTimeListItem showtime={item}></ShowTimeListItem>
                 )
             }}
             listKey={(item, index) => `_key${index.toString()}`}
@@ -22,4 +22,4 @@ const SmallGenreList = ({genres}) => {
             />
     </View>)
 }
-export default SmallGenreList
+export default ShowTimeList

@@ -23,6 +23,7 @@ const MovieList = ({movies, navigation, cinema}) => {
             renderItem={({item}) => {
                 return ( 
                     <MovieListItem
+                        cinema={cinema}
                         movie={item} 
                         navigation={navigation}/>
                 )
