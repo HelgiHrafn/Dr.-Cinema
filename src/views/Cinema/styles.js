@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { darker } from '../../styles/colors'
+import { dark, darker } from '../../styles/colors'
 
 export default StyleSheet.create({
     main: {
@@ -8,5 +8,24 @@ export default StyleSheet.create({
         backgroundColor: darker,
         alignItems: 'center',
 
+    },
+    about: {
+        alignItems: 'center',
+        margin: 10,
+        display: 'flex'
+        
+    },
+    info:{
+        display: 'flex',
+        alignSelf: 'flex-start',
+        margin: 10,
+    },
+    description: {
+       
+        backgroundColor: dark,
+        padding: 5,
+        borderRadius: 10,
+        maxHeight: 200
     }
+    
 })
