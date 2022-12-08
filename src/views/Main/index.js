@@ -13,7 +13,6 @@ const Cinemas = ({navigation}) => {
         dispatch(getCinemas())
     }, [])
     const cinemas = useSelector(state => state.cinemas)
-    console.log('what is upcoming here ', Upcoming)
 
     return (
         <View style={styles.main}>

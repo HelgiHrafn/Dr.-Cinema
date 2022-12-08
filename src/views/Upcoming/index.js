@@ -13,8 +13,6 @@ const Upcoming = ({navigation}) => {
         dispatch(getUpcoming())
     }, [])
     const upcoming = useSelector(state => state.upcoming)
-    console.log(upcoming)
-  
 
     return (
         <View style={styles.main}>

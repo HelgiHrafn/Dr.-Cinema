@@ -4,6 +4,11 @@ import { headings } from '../../styles/headings'
 import styles from './styles'
 
 const UpcomingListItem = ({ upcomingMovie, navigation }) => {
+    console.log('before ', upcomingMovie.poster)
+    if (upcomingMovie.poster == "https://kvikmyndir.is/images/poster/"){
+        upcomingMovie.poster = `https://i.ibb.co/VWhtmZP/no-img-available.jpg`
+        console.log('after ', upcomingMovie.poster)
+    }
     return(
         <TouchableOpacity 
                 style={styles.item} 
