@@ -14,6 +14,8 @@ const MovieList = ({movies, navigation, cinema}) => {
                 //console.log(movie)
            } 
       })
+
+    
     
    return(
     <View style={styles.list}>
@@ -29,6 +31,7 @@ const MovieList = ({movies, navigation, cinema}) => {
                         navigation={navigation}/>
                 )
             }}   
+            listKey="MovieList"
             />
     </View>)
 }

@@ -17,5 +17,9 @@ export const headings = {
     h3: {
         ...base.headings,
         fontSize: 16
+    },
+    h4: {
+        ...base.headings,
+        fontSize: 11
     }
 }

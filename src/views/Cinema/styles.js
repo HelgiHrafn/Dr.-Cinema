@@ -25,7 +25,7 @@ export default StyleSheet.create({
         backgroundColor: dark,
         padding: 5,
         borderRadius: 10,
-        maxHeight: 200
+        maxHeight: 125
     }
     
 })
