@@ -29,5 +29,11 @@ export const headings = {
         color: "#474E68",
         fontSize: 22,
         paddingHorizontal: 5
-    }
+    },
+    b2:
+        {
+        fontFamily: 'Futura',
+        color: "#474E68",
+        fontSize: 16,
+        }
 };

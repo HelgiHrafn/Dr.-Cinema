@@ -8,7 +8,7 @@ const ShowTimeListItem = ({showtime}) => {
     return(
         <TouchableOpacity onPress={()=> Linking.openURL(showtime.purchase_url)}>
             <View style={styles.item}>
-                <Text style={headings.h3}>{showtime.time}</Text>
+                <Text style={headings.b2}>{showtime.time}</Text>
             </View>
         </TouchableOpacity>
         
