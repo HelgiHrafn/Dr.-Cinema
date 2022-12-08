@@ -1,3 +1,5 @@
+import dark from '../styles/colors'
+
 const base = {
     headings: {
         fontFamily: 'Futura',
@@ -21,5 +23,11 @@ export const headings = {
     h4: {
         ...base.headings,
         fontSize: 11
+    },
+    b1: {
+        fontFamily: 'Futura',
+        color: "#474E68",
+        fontSize: 22,
+        paddingHorizontal: 5
     }
 };

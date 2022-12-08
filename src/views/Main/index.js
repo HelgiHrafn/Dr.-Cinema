@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
-import { View, Button, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import CinemaList from '../../components/CinemaList';
 import styles from './styles';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCinemas } from '../../actions/CinemaActions';
 import { filterCinemas } from '../../services/CinemaService';
+import { headings } from '../../styles/headings';
 
 const Cinemas = ({navigation}) => {
 
@@ -17,11 +18,8 @@ const Cinemas = ({navigation}) => {
 
     return (
         <View style={styles.main}>
-            <TouchableOpacity style={styles.buttonBackground}>
-                <Button
-                title="Upcoming Movies"
-                onPress={() => navigation.navigate("Upcoming")}
-                style={styles.button}/>
+            <TouchableOpacity style={styles.buttonBackground} onPress={() => navigation.navigate("Upcoming")}>
+                <Text style={headings.b1}> Upcoming Movies</Text>
             </TouchableOpacity>
             <CinemaList cinemas={cinemas} navigation={navigation}/>
         </View>

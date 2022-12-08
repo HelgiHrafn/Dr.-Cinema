@@ -6,5 +6,15 @@ export default StyleSheet.create({
         width: '100%',
         height: '100%',
         backgroundColor: darker
+    },
+    buttonBackground: {
+        backgroundColor: "#FFFFFF",
+        borderRadius: 12,
+        paddingVertical: 15,
+        marginTop: 12,
+        alignSelf: 'center',
+        // position: 'relative',
+       
     }
-});
+    }
+);
