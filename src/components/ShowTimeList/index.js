@@ -4,7 +4,6 @@ import styles from './styles'
 import ShowTimeListItem from '../ShowTimeListItem'
 
 const ShowTimeList = ({ showtimes }) => {
-    console.log('what does showtime look like', showtimes)
     return (
         <View style={styles.list}>
             <FlatList
