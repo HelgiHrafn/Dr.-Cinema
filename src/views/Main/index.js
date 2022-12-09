@@ -18,7 +18,7 @@ const Cinemas = ({navigation}) => {
 
     return (
         <View style={styles.main}>
-            <TouchableOpacity style={styles.buttonBackground} onPress={() => navigation.navigate("Upcoming")}>
+            <TouchableOpacity style={styles.buttonBackground} onPress={() => navigation.navigate("Væntanlegt")}>
                 <Text style={headings.b1}>Væntanlegar myndir</Text>
             </TouchableOpacity>
             <CinemaList cinemas={cinemas} navigation={navigation}/>

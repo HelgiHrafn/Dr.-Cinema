@@ -20,26 +20,26 @@ const style = {
 
 const Routes = () => (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName='Contacts'>
+        <Stack.Navigator initialRouteName='Cinemas'>
         <Stack.Screen 
             options={style}
-            name ="Cinemas" 
+            name ="Dr. Cinema" 
             component={Cinemas}/>
         <Stack.Screen 
             options={style}
-            name ="Cinema" 
+            name ="Bíó" 
             component={Cinema}/>
         <Stack.Screen 
             options={style} 
-            name ="Movie" 
+            name ="Mynd" 
             component={Movie} />
         <Stack.Screen 
             options={style}
-            name ="Upcoming" 
+            name ="Væntanlegt" 
             component={Upcoming}/> 
         <Stack.Screen 
             options={style}
-            name ="UpcomingMovie" 
+            name ="Væntanleg Mynd" 
             component={UpcomingMovie}/> 
         </Stack.Navigator>
     </NavigationContainer>

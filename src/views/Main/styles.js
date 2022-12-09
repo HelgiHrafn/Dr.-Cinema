@@ -10,8 +10,8 @@ export default StyleSheet.create({
     buttonBackground: {
         backgroundColor: "#FFFFFF",
         borderRadius: 12,
-        paddingVertical: 15,
-        marginTop: 12,
+        padding: 5,
+        marginTop: 10,
         alignSelf: 'center',
         // position: 'relative',
        

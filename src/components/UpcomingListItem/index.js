@@ -11,7 +11,7 @@ const UpcomingListItem = ({ upcomingMovie, navigation }) => {
         upcomingMovie.poster = `https://i.ibb.co/VWhtmZP/no-img-available.jpg`
     }
     return(
-        <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('UpcomingMovie', {upcomingMovie})}>
+        <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('Væntanleg Mynd', {upcomingMovie})}>
         <Image style={styles.poster} source={{ uri: upcomingMovie.poster }}/>
         <Text style={[headings.h3, styles.title]}>{upcomingMovie.title}</Text>
         <Text style={headings.h3}>({upcomingMovie["release-dateIS"]})</Text>

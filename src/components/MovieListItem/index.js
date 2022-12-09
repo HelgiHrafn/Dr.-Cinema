@@ -7,7 +7,7 @@ import SmallGenreList from '../SmallGenreList'
 const MovieListItem = ({ movie, navigation, cinema }) => {
     const genres = movie?.genres
     return(
-        <TouchableOpacity style={styles.item} onPress={()=> navigation.navigate('Movie', {movie, cinema})}>
+        <TouchableOpacity style={styles.item} onPress={()=> navigation.navigate('Mynd', {movie, cinema})}>
             <Image style={styles.poster} source={{ uri: movie.poster }}/>
             <Text style={[headings.h3, styles.title]}>{movie.title}</Text>
             <Text style={headings.h3}>({movie.year})</Text>
