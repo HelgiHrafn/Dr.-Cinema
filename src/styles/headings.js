@@ -1,4 +1,3 @@
-import dark from '../styles/colors'
 
 const base = {
     headings: {
@@ -26,14 +25,14 @@ export const headings = {
     },
     b1: {
         fontFamily: 'Futura',
-        color: "#474E68",
+        color: '#474E68',
         fontSize: 22,
         paddingHorizontal: 5
     },
     b2:
         {
-        fontFamily: 'Futura',
-        color: "#474E68",
-        fontSize: 16,
+            fontFamily: 'Futura',
+            color: '#474E68',
+            fontSize: 16
         }
-};
+}

@@ -1,9 +1,9 @@
-import { StyleSheet } from 'react-native';
-import { dark } from '../../styles/colors';
+import { StyleSheet } from 'react-native'
+import { dark } from '../../styles/colors'
 
 export default StyleSheet.create({
     list: {
-      
+
         backgroundColor: dark,
         alignItems: 'center',
         borderRadius: 10,
@@ -12,10 +12,10 @@ export default StyleSheet.create({
         padding: 5,
         flex: 1,
         minWidth: 400
-        
+
     },
     flatlist: {
         backgroundColor: 'red',
         flex: 1
     }
-});
+})

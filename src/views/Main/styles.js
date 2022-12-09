@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import { darker } from '../../styles/colors';
+import { StyleSheet } from 'react-native'
+import { darker } from '../../styles/colors'
 
 export default StyleSheet.create({
     main: {
@@ -8,13 +8,13 @@ export default StyleSheet.create({
         backgroundColor: darker
     },
     buttonBackground: {
-        backgroundColor: "#FFFFFF",
+        backgroundColor: '#FFFFFF',
         borderRadius: 12,
         padding: 5,
         marginTop: 10,
-        alignSelf: 'center',
+        alignSelf: 'center'
         // position: 'relative',
-       
+
     }
-    }
-);
+}
+)

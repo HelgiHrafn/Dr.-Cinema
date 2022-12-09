@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import { dark } from '../../styles/colors';
+import { StyleSheet } from 'react-native'
+import { dark } from '../../styles/colors'
 
 export default StyleSheet.create({
     list: {
@@ -8,6 +8,6 @@ export default StyleSheet.create({
         padding: 10,
         borderRadius: 10,
         flex: 1,
-        marginBottom: 30,
+        marginBottom: 30
     }
-});
+})

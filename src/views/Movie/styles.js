@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import { darker } from '../../styles/colors';
+import { StyleSheet } from 'react-native'
+import { darker } from '../../styles/colors'
 
 export default StyleSheet.create({
     main: {
@@ -11,7 +11,7 @@ export default StyleSheet.create({
 
     },
     container: {
-      
+
         alignItems: 'center',
         padding: 10,
         marginBottom: 30
@@ -22,7 +22,7 @@ export default StyleSheet.create({
         resizeMode: 'contain'
     },
     description: {
-       flex: 1,
+        flex: 1
     }
-    
-});
+
+})

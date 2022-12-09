@@ -51,6 +51,10 @@ Default image for upcoming movies which have no poster image.
 
 ### Useful links
 
+Video presentation:
+
+https://youtu.be/jn_ROcPeMpk
+
 Link to our github repo:
 
 https://github.com/HelgiHrafn/Dr.-Cinema
